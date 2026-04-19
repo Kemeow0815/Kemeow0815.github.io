@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kemeow0815.github.io/sitemap.xml

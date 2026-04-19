@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="/styles/main.min.css">
+
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+<script>
+(function() {
+  // Check for saved theme preference
+  var savedTheme = localStorage.getItem('theme');
+  
+  if (savedTheme) {
+    // Use saved preference
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  } else {
+    // Check system preference
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = prefersDark ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+  }
+})();
+</script>
+
+
+<meta name="description" content="每一段旅行，都有终点。">
+<meta property="og:site_name" content="喵洛阁">
+<meta property="og:title" content="喵洛阁">
+<meta property="og:description" content="每一段旅行，都有终点。">
+
+<meta property="og:image" content="/images/avatar.png">
+
+<meta property="og:url" content="https://kemeow0815.github.io">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="喵洛阁">
+<meta name="twitter:description" content="每一段旅行，都有终点。">
+
+<meta name="twitter:image" content="/images/avatar.png">
+
+
+  <meta name="generator" content="Gridea Pro 1.0.0">
+  <title>标签 | 喵洛阁</title>
+  
+<meta name="description" content="每一段旅行，都有终点。">
+<link rel="canonical" href="https://kemeow0815.github.io/tags/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"喵洛阁","url":"https://kemeow0815.github.io","description":"每一段旅行，都有终点。","potentialAction":{"@type":"SearchAction","query-input":"required name=search_term_string","target":"https://kemeow0815.github.io/search?q={search_term_string}"}}</script>
+<meta property="og:title" content="喵洛阁">
+<meta property="og:description" content="每一段旅行，都有终点。">
+<meta property="og:url" content="https://kemeow0815.github.io/tags/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="喵洛阁">
+<meta property="og:image" content="/images/avatar.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://kemeow0815.github.io/tags/">
+<meta name="twitter:title" content="喵洛阁">
+<meta name="twitter:description" content="每一段旅行，都有终点。">
+<meta name="twitter:image" content="/images/avatar.png">
+</head>
+<body class="flavor-theme">
+
+  <!-- 加载页面 -->
+  
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-content">
+      
+      <div class="loading-spinner"></div>
+      
+      <div class="loading-title">加载中...</div>
+    </div>
+  </div>
+  
+
+  <!-- 流星背景 -->
+  <div class="bg-container">
+    <div class="bg-stars" id="bg-stars"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <div class="top-bar">
+
+      
+      <div class="top-bar__left">
+        
+        <a href="https://kemeow0815.github.io" class="site-avatar-link" aria-label="返回首页">
+          <img class="site-avatar" src="https://wsrv.nl/?url=github.com%2FKemeow0815.png" alt="喵洛阁" />
+        </a>
+        
+        <a href="https://kemeow0815.github.io" class="site-name-link">喵洛阁</a>
+      </div>
+
+      
+      <nav class="top-bar__nav" id="sectionBar">
+        
+        
+          
+          
+          <a class="nav-item" href="https://kemeow0815.github.io/">🏠首页</a>
+          
+        
+          
+          
+          <div class="nav-item-wrapper">
+            <div class="nav-item nav-item--has-children" data-menu-id="menu-2">
+              <a class="nav-item__link" href="javascript:void(0);">📖文章</a>
+              <svg class="nav-item__arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="nav-submenu" id="submenu-menu-2">
+              
+              <a class="nav-submenu__item" href="/post">📚全部文章</a>
+              
+              <a class="nav-submenu__item" href="/archives">📦归档</a>
+              
+              <a class="nav-submenu__item" href="/tags">🔖标签</a>
+              
+            </div>
+          </div>
+          
+        
+          
+          
+          <a class="nav-item" href="/memos">📝闪念</a>
+          
+        
+          
+          
+          <div class="nav-item-wrapper">
+            <div class="nav-item nav-item--has-children" data-menu-id="menu-4">
+              <a class="nav-item__link" href="javascript:void(0);">🔗链接</a>
+              <svg class="nav-item__arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="nav-submenu" id="submenu-menu-4">
+              
+              <a class="nav-submenu__item" href="/links">🧑‍🤝‍🧑友链</a>
+              
+              <a class="nav-submenu__item" href="/post/fcircle">💬朋友圈</a>
+              
+            </div>
+          </div>
+          
+        
+          
+          
+          <div class="nav-item-wrapper">
+            <div class="nav-item nav-item--has-children" data-menu-id="menu-5">
+              <a class="nav-item__link" href="javascript:void(0);">📔页面</a>
+              <svg class="nav-item__arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="nav-submenu" id="submenu-menu-5">
+              
+              <a class="nav-submenu__item" href="/post/sponsor">💗赞助</a>
+              
+              <a class="nav-submenu__item" href="/post/timetable">🗓️课程表</a>
+              
+            </div>
+          </div>
+          
+        
+          
+          
+          <a class="nav-item" href="/post/about">🫠关于</a>
+          
+        
+        
+      </nav>
+
+      
+      <div class="top-bar__right">
+        <button class="btn-icon btn-theme" id="btnTheme" type="button" aria-label="切换主题">
+          
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.742 13.045a8 8 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.03 8.03 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10 10 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.94 9.94 0 0 0 7.072 2.93a9.93 9.93 0 0 0 7.07-2.929a10 10 0 0 0 2.583-4.491a1 1 0 0 0-1.224-1.224m-2.772 4.301a7.95 7.95 0 0 1-5.656 2.343a7.95 7.95 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a8 8 0 0 1 2.06-1.483a10.03 10.03 0 0 0 2.89 7.848a9.97 9.97 0 0 0 7.848 2.891a8 8 0 0 1-1.484 2.059"/>
+          </svg>
+          
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2"/>
+            <path d="M12 20v2"/>
+            <path d="m4.93 4.93 1.41 1.41"/>
+            <path d="m17.66 17.66 1.41 1.41"/>
+            <path d="M2 12h2"/>
+            <path d="M20 12h2"/>
+            <path d="m6.34 17.66-1.41 1.41"/>
+            <path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+        </button>
+        <button class="btn-icon btn-search search-btn" id="btnSearch" type="button" aria-label="搜索">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="btn-icon btn-nav-toggle mobile-only" id="btnNavToggle" type="button" aria-label="切换导航">
+          <div class="hamburger" id="hamburger">
+            <span class="hamburger__line hamburger__line--top"></span>
+            <span class="hamburger__line hamburger__line--bottom"></span>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+<div class="header-spacer"></div>
+
+<script>
+(function(){
+  // Mobile nav toggle
+  var btn = document.getElementById('btnNavToggle');
+  var nav = document.getElementById('sectionBar');
+  var hamburger = document.getElementById('hamburger');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(){
+    nav.classList.toggle('top-bar__nav--open');
+    if (hamburger) hamburger.classList.toggle('is-active');
+  });
+
+  // Submenu toggle for mobile
+  var navItemsWithChildren = document.querySelectorAll('.nav-item--has-children');
+  navItemsWithChildren.forEach(function(item) {
+    item.addEventListener('click', function(e) {
+      // Only handle click on mobile
+      if (window.innerWidth > 768) return;
+      
+      e.preventDefault();
+      e.stopPropagation();
+      
+      var menuId = this.getAttribute('data-menu-id');
+      var submenu = document.getElementById('submenu-' + menuId);
+      
+      // Close other open submenus
+      navItemsWithChildren.forEach(function(otherItem) {
+        if (otherItem !== item) {
+          var otherMenuId = otherItem.getAttribute('data-menu-id');
+          var otherSubmenu = document.getElementById('submenu-' + otherMenuId);
+          if (otherSubmenu && otherSubmenu.classList.contains('nav-submenu--open')) {
+            otherSubmenu.classList.remove('nav-submenu--open');
+            otherItem.classList.remove('nav-item--expanded');
+          }
+        }
+      });
+      
+      // Toggle current submenu
+      if (submenu) {
+        submenu.classList.toggle('nav-submenu--open');
+        this.classList.toggle('nav-item--expanded');
+      }
+    });
+  });
+
+  // Close mobile nav when clicking on simple nav items
+  nav.querySelectorAll('.nav-item:not(.nav-item--has-children)').forEach(function(item){
+    item.addEventListener('click', function(){
+      nav.classList.remove('top-bar__nav--open');
+      if (hamburger) hamburger.classList.remove('is-active');
+    });
+  });
+
+  // Theme toggle with performance optimization
+  var themeBtn = document.getElementById('btnTheme');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function() {
+      var currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      // Add class to disable transitions during theme change
+      document.body.classList.add('theme-changing');
+      
+      // Use requestAnimationFrame for smooth theme switch
+      requestAnimationFrame(function() {
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        
+        // Remove the class after theme change is complete
+        requestAnimationFrame(function() {
+          document.body.classList.remove('theme-changing');
+        });
+      });
+    });
+  }
+})();
+</script>
+
+
+  <main class="site-main" role="main">
+    
+<div class="container">
+  <div class="page-header">
+    <h1 class="page-title">标签</h1>
+    
+    <p class="page-subtitle meta-text">共 4 个标签</p>
+    
+  </div>
+
+  
+  <div class="tag-cloud">
+    
+    <a href="/tag/bo-ke/" class="tag-pill tag-pill--lg">
+      <span class="tag-pill__name">博客</span>
+      <span class="tag-pill__count">3</span>
+    </a>
+    
+    <a href="/tag/gong-neng/" class="tag-pill tag-pill--lg">
+      <span class="tag-pill__name">功能</span>
+      <span class="tag-pill__count">1</span>
+    </a>
+    
+    <a href="/tag/w-a-l-i-n-e-ping-lun/" class="tag-pill tag-pill--lg">
+      <span class="tag-pill__name">waline评论</span>
+      <span class="tag-pill__count">1</span>
+    </a>
+    
+    <a href="/tag/ye-mian/" class="tag-pill tag-pill--lg">
+      <span class="tag-pill__name">页面</span>
+      <span class="tag-pill__count">1</span>
+    </a>
+    
+  </div>
+  
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+
+    
+    
+    
+    <nav class="footer-nav" aria-label="页脚导航" id="footer-nav-custom">
+    </nav>
+    <script>
+      (function() {
+        var navData = [
+  {"name": "首页", "link": "/"},
+  {"name": "闪念", "link": "/memos"},
+  {"name": "关于", "link": "/post/about"}
+];
+        if (Array.isArray(navData)) {
+          var navHtml = '';
+          navData.forEach(function(item) {
+            navHtml += '<a class="footer-nav__link" href="' + item.link + '">' + item.name + '</a>';
+          });
+          document.getElementById('footer-nav-custom').innerHTML = navHtml;
+        }
+      })();
+    </script>
+    
+
+    
+    <div class="footer-social">
+      
+      <a class="footer-social__link" href="https://github.com/Kemeow0815" target="_blank" rel="noopener noreferrer"
+        aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+      </a>
+      
+      
+      
+      
+      <a class="footer-social__link" href="https://t.me/yxksw_bot" target="_blank" rel="noopener noreferrer"
+        aria-label="Telegram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 8.24l-2.17 10.24c-.16.73-.6.9-1.22.56l-3.37-2.48-1.63 1.56c-.18.18-.33.33-.68.33l.24-3.44 6.25-5.65c.27-.24-.06-.37-.42-.13l-7.72 4.86-3.33-1.04c-.72-.23-.74-.72.15-1.06l13.02-5.02c.6-.22 1.12.14.93 1.03z"/>
+        </svg>
+      </a>
+      
+      
+      <a class="footer-social__link" href="https://qm.qq.com/q/kz5EuEimk0" target="_blank" rel="noopener noreferrer"
+        aria-label="QQ">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.003 2c-2.265 0-6.29 1.364-6.29 7.325v1.195S3.55 14.96 3.55 17.474c0 .665.17 1.025.281 1.025.114 0 .902-.484 1.748-2.072 0 0-.18 2.197 1.904 3.967 0 0-1.77.495-1.77 1.182 0 .686 4.078.43 6.29.43 2.21 0 6.288.256 6.288-.43 0-.687-1.768-1.182-1.768-1.182 2.085-1.77 1.905-3.967 1.905-3.967.845 1.588 1.634 2.072 1.746 2.072.111 0 .283-.36.283-1.025 0-2.514-2.166-6.954-2.166-6.954V9.325C18.29 3.364 14.268 2 12.003 2z"/>
+        </svg>
+      </a>
+      
+      
+      <a class="footer-social__link" href="https://space.bilibili.com/3546643173477234" target="_blank" rel="noopener noreferrer"
+        aria-label="Bilibili">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>
+        </svg>
+      </a>
+      
+      
+      <a class="footer-social__link" href="https://web.okjike.com/u/07152f0c-0f65-4501-855b-031f3e20e4a5" target="_blank" rel="noopener noreferrer"
+        aria-label="即刻">
+        <svg width="20" height="20" viewBox="0 0 1024 1024" fill="currentColor">
+          <path d="M660.39 123.63v463.59S645.04 726.4 558.98 771.43c-53.12 31.21-128.85 67.54-228.63 70.61l58.33 58.33s175-15.35 254.82-87.5 82.89-159.9 82.89-194.31V172.75l-66-49.12z" fill="#62B2E4"/>
+          <path d="M660.39 123.63v463.58s-15.36 139.17-101.41 184.21c-53.12 31.22-128.85 67.54-228.62 70.62L297.6 702.85s70.62-13.31 117.71-28.64c47.07-15.36 72-95.19 72-95.19V123.63h173.08z" fill="#F3DB2B"/>
+        </svg>
+      </a>
+      
+      
+      <a class="footer-social__link" href="mailto:mcy@kemiaosw.top" aria-label="邮箱">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      </a>
+      
+      <a class="footer-social__link" href="/feed.xml" aria-label="RSS">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M6.18 15.64a2.18 2.18 0 110 4.36 2.18 2.18 0 010-4.36zM4 4.44A15.56 15.56 0 0119.56 20h-2.83A12.73 12.73 0 004 7.27V4.44zm0 5.66a9.9 9.9 0 019.9 9.9h-2.83A7.07 7.07 0 004 12.93V10.1z"/>
+        </svg>
+      </a>
+    </div>
+
+    
+    <div class="footer-copyright">
+      <p>&copy; 2026 喵洛阁. All rights reserved.</p>
+    </div>
+
+    
+    
+    <div class="footer-custom">
+      <span id="runtime_span" style="text-align: center;"></span>
+<br>
+<script defer src="https://busuanzi.9420.ltd/js"></script>
+<div style="text-align: center;">
+    本站总访问量 <span id="busuanzi_site_pv"></span> 次
+    本站总访客数 <span id="busuanzi_site_uv"></span> 人
+</div>
+<!-- 引入 CSS (HEAD标签内) -->
+<link rel="stylesheet" href="https://cdn.268682.xyz/music/netease-mini-player-v2.css">
+
+<!-- 引入 JS (BODY标签底部) -->
+<script src="https://cdn.268682.xyz/music/netease-mini-player-v2.js"></script>
+<div class="netease-mini-player"
+     data-playlist-id="13681647281"
+     data-embed="false"
+     data-position="bottom-left"
+     data-lyric="true"
+     data-theme="auto"
+     data-default-minimized="true"
+></div>
+    </div>
+    
+
+    
+    <div class="footer-powered">
+      <span>Powered by <a href="https://gridea.pro" target="_blank" rel="noopener noreferrer">Gridea Pro</a></span>
+    </div>
+
+  </div>
+</footer>
+
+  
+  <div class="search-overlay" id="searchOverlay" style="display:none;">
+  <div class="search-modal">
+    <div class="search-header">
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" class="search-input" id="searchInput" placeholder="搜索文章..." autocomplete="off" />
+      <span class="search-kbd">&#8984;K</span>
+      <button class="search-close" id="searchClose" type="button" aria-label="关闭搜索">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<script src="/scripts/search.js"></script>
+  
+
+  
+
+  
+
+  
+  <script>function show_runtime() {
+  var X = new Date("2024/11/1 12:00:00");
+  var Y = new Date();
+  var T = Y.getTime() - X.getTime();
+  var M = 24 * 60 * 60 * 1000;
+  var a = T / M;
+  var A = Math.floor(a);
+  var b = (a - A) * 24;
+  var B = Math.floor(b);
+  var c = (b - B) * 60;
+  var C = Math.floor((b - B) * 60);
+  var D = Math.floor((c - C) * 60);
+  document.getElementById("runtime_span").innerHTML = "⏱️本站已运行 " + A + "天" + B + "小时" + C + "分" + D + "秒";
+  setTimeout(show_runtime, 1000);
+}
+show_runtime();</script>
+  
+
+  <!-- 加载页面脚本 -->
+  
+  <script>
+  (function() {
+    // 页面加载完成后隐藏加载动画
+    function hideLoadingOverlay() {
+      const overlay = document.getElementById('loading-overlay');
+      if (overlay) {
+        overlay.classList.add('fade-out');
+        setTimeout(function() {
+          overlay.style.display = 'none';
+        }, 600);
+      }
+    }
+    
+    // 等待页面完全加载
+    if (document.readyState === 'complete') {
+      hideLoadingOverlay();
+    } else {
+      window.addEventListener('load', hideLoadingOverlay);
+    }
+  })();
+  </script>
+  
+
+  <!-- 流星背景脚本 - 性能优化 -->
+  <script>
+  (function() {
+    const starsContainer = document.getElementById('bg-stars');
+    if (!starsContainer) return;
+    
+    // 检测移动端和性能模式
+    const isMobile = window.matchMedia('(max-width: 750px)').matches;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    // 根据设备调整流星数量
+    const starCount = isMobile ? 15 : (prefersReducedMotion ? 0 : 25);
+    
+    // 使用 DocumentFragment 批量添加
+    const fragment = document.createDocumentFragment();
+    
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.className = 'bg-star';
+      
+      // 随机参数 - 使用整数避免过多重绘
+      const topOffset = Math.floor(Math.random() * 130) + 'vh';
+      const fallDuration = (Math.floor(Math.random() * 8) + 6) + 's';
+      const fallDelay = (Math.floor(Math.random() * 15)) + 's';
+      
+      star.style.setProperty('--top-offset', topOffset);
+      star.style.setProperty('--fall-duration', fallDuration);
+      star.style.setProperty('--fall-delay', fallDelay);
+      
+      fragment.appendChild(star);
+    }
+    
+    starsContainer.appendChild(fragment);
+  })();
+  </script>
+
+<script>console.log("\n%c ✦ Gridea Pro v1.0.0 %c · Theme: flavor-theme v1.0.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
+</body>
+</html>

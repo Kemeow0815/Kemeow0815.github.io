@@ -1,0 +1,499 @@
+/* ============================================================================
+   Element Plus Theme Fix for Dark/Light Mode
+   ============================================================================ */
+
+/* Dark Mode - Element Plus CSS Variables Override */
+[data-theme="dark"],
+[data-theme=dark] {
+  /* Background colors */
+  --el-bg-color: #111111 !important;
+  --el-bg-color-page: #000000 !important;
+  --el-bg-color-overlay: #1a1a1a !important;
+  
+  /* Text colors */
+  --el-text-color-primary: #ffffff !important;
+  --el-text-color-regular: #e0e0e0 !important;
+  --el-text-color-secondary: #999999 !important;
+  --el-text-color-placeholder: #666666 !important;
+  
+  /* Border colors */
+  --el-border-color: #333333 !important;
+  --el-border-color-light: #222222 !important;
+  --el-border-color-lighter: #1a1a1a !important;
+  
+  /* Fill colors */
+  --el-fill-color: #1a1a1a !important;
+  --el-fill-color-light: #222222 !important;
+  --el-fill-color-lighter: #333333 !important;
+  
+  /* Mask/Overlay */
+  --el-mask-color: rgba(0, 0, 0, 0.8) !important;
+  --el-mask-color-extra-light: rgba(0, 0, 0, 0.3) !important;
+  
+  /* Component specific */
+  --el-color-white: #ffffff !important;
+  --el-color-black: #000000 !important;
+  
+  /* LMM Theme Variables */
+  --lmm-fontcolor: #a9a9b3 !important;
+  --lmm-background: #252627 !important;
+  --lmm-floorcolor: #454545 !important;
+}
+
+/* Light Mode - Element Plus CSS Variables Override */
+[data-theme="light"],
+[data-theme=light] {
+  /* Background colors */
+  --el-bg-color: #ffffff !important;
+  --el-bg-color-page: #f5f5f5 !important;
+  --el-bg-color-overlay: #ffffff !important;
+  
+  /* Text colors */
+  --el-text-color-primary: #1a1a1a !important;
+  --el-text-color-regular: #333333 !important;
+  --el-text-color-secondary: #666666 !important;
+  --el-text-color-placeholder: #999999 !important;
+  
+  /* Border colors */
+  --el-border-color: #e0e0e0 !important;
+  --el-border-color-light: #eeeeee !important;
+  --el-border-color-lighter: #f5f5f5 !important;
+  
+  /* Fill colors */
+  --el-fill-color: #f5f5f5 !important;
+  --el-fill-color-light: #eeeeee !important;
+  --el-fill-color-lighter: #e0e0e0 !important;
+  
+  /* Mask/Overlay */
+  --el-mask-color: rgba(0, 0, 0, 0.5) !important;
+  --el-mask-color-extra-light: rgba(0, 0, 0, 0.2) !important;
+  
+  /* Component specific */
+  --el-color-white: #ffffff !important;
+  --el-color-black: #000000 !important;
+  
+  /* LMM Theme Variables */
+  --lmm-fontcolor: #363636 !important;
+  --lmm-background: #f7f9fe !important;
+  --lmm-floorcolor: #a9a9b3 !important;
+}
+
+/* ============================================================================
+   Element Plus Popover Specific Styles (for AI Summary)
+   ============================================================================ */
+
+/* Dark Mode Popover - Ultra high specificity */
+html[data-theme="dark"] .el-popover,
+html[data-theme=dark] .el-popover,
+[data-theme="dark"] .el-popover,
+[data-theme=dark] .el-popover,
+.el-popover[data-theme="dark"],
+.el-popover[data-theme=dark] {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333333 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Dark Mode Popover Title */
+html[data-theme="dark"] .el-popover__title,
+html[data-theme=dark] .el-popover__title,
+[data-theme="dark"] .el-popover__title,
+[data-theme=dark] .el-popover__title {
+  color: #ffffff !important;
+}
+
+/* Dark Mode Popover Arrow */
+html[data-theme="dark"] .el-popover .el-popper__arrow:before,
+html[data-theme=dark] .el-popover .el-popper__arrow:before,
+[data-theme="dark"] .el-popover .el-popper__arrow:before,
+[data-theme=dark] .el-popover .el-popper__arrow:before {
+  background-color: #1a1a1a !important;
+  border-color: #333333 !important;
+}
+
+/* Dark Mode Popover Content - All child elements */
+html[data-theme="dark"] .el-popover *,
+html[data-theme=dark] .el-popover *,
+[data-theme="dark"] .el-popover *,
+[data-theme=dark] .el-popover * {
+  color: #e0e0e0 !important;
+}
+
+/* Light Mode Popover - Ultra high specificity */
+html[data-theme="light"] .el-popover,
+html[data-theme=light] .el-popover,
+[data-theme="light"] .el-popover,
+[data-theme=light] .el-popover,
+.el-popover[data-theme="light"],
+.el-popover[data-theme=light] {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  color: #333333 !important;
+}
+
+/* Light Mode Popover Title */
+html[data-theme="light"] .el-popover__title,
+html[data-theme=light] .el-popover__title,
+[data-theme="light"] .el-popover__title,
+[data-theme=light] .el-popover__title {
+  color: #1a1a1a !important;
+}
+
+/* Light Mode Popover Arrow */
+html[data-theme="light"] .el-popover .el-popper__arrow:before,
+html[data-theme=light] .el-popover .el-popper__arrow:before,
+[data-theme="light"] .el-popover .el-popper__arrow:before,
+[data-theme=light] .el-popover .el-popper__arrow:before {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+}
+
+/* Light Mode Popover Content - All child elements */
+html[data-theme="light"] .el-popover *,
+html[data-theme=light] .el-popover *,
+[data-theme="light"] .el-popover *,
+[data-theme=light] .el-popover * {
+  color: #333333 !important;
+}
+
+/* ============================================================================
+   Element Plus Popper (for dropdowns and popovers)
+   ============================================================================ */
+
+/* Dark Mode Popper */
+html[data-theme="dark"] .el-popper,
+html[data-theme=dark] .el-popper,
+[data-theme="dark"] .el-popper,
+[data-theme=dark] .el-popper {
+  background-color: #1a1a1a !important;
+  border-color: #333333 !important;
+  color: #e0e0e0 !important;
+}
+
+html[data-theme="dark"] .el-popper.is-light,
+html[data-theme=dark] .el-popper.is-light,
+[data-theme="dark"] .el-popper.is-light,
+[data-theme=dark] .el-popper.is-light {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333333 !important;
+}
+
+html[data-theme="dark"] .el-popper.is-light .el-popper__arrow:before,
+html[data-theme=dark] .el-popper.is-light .el-popper__arrow:before,
+[data-theme="dark"] .el-popper.is-light .el-popper__arrow:before,
+[data-theme=dark] .el-popper.is-light .el-popper__arrow:before {
+  background-color: #1a1a1a !important;
+  border-color: #333333 !important;
+}
+
+/* Light Mode Popper */
+html[data-theme="light"] .el-popper,
+html[data-theme=light] .el-popper,
+[data-theme="light"] .el-popper,
+[data-theme=light] .el-popper {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+  color: #333333 !important;
+}
+
+html[data-theme="light"] .el-popper.is-light,
+html[data-theme=light] .el-popper.is-light,
+[data-theme="light"] .el-popper.is-light,
+[data-theme=light] .el-popper.is-light {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+html[data-theme="light"] .el-popper.is-light .el-popper__arrow:before,
+html[data-theme=light] .el-popper.is-light .el-popper__arrow:before,
+[data-theme="light"] .el-popper.is-light .el-popper__arrow:before,
+[data-theme=light] .el-popper.is-light .el-popper__arrow:before {
+  background-color: #ffffff !important;
+  border-color: #e0e0e0 !important;
+}
+
+/* ============================================================================
+   Element Plus MessageBox Specific Styles
+   ============================================================================ */
+
+/* Dark Mode MessageBox */
+html[data-theme="dark"] .el-message-box,
+html[data-theme=dark] .el-message-box,
+[data-theme="dark"] .el-message-box,
+[data-theme=dark] .el-message-box {
+  background-color: #111111 !important;
+  border: 1px solid #333333 !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5) !important;
+}
+
+html[data-theme="dark"] .el-message-box__header,
+html[data-theme=dark] .el-message-box__header,
+[data-theme="dark"] .el-message-box__header,
+[data-theme=dark] .el-message-box__header {
+  border-bottom: 1px solid #333333 !important;
+}
+
+html[data-theme="dark"] .el-message-box__title,
+html[data-theme=dark] .el-message-box__title,
+[data-theme="dark"] .el-message-box__title,
+[data-theme=dark] .el-message-box__title {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .el-message-box__content,
+html[data-theme=dark] .el-message-box__content,
+[data-theme="dark"] .el-message-box__content,
+[data-theme=dark] .el-message-box__content {
+  color: #e0e0e0 !important;
+}
+
+html[data-theme="dark"] .el-message-box__message p,
+html[data-theme=dark] .el-message-box__message p,
+[data-theme="dark"] .el-message-box__message p,
+[data-theme=dark] .el-message-box__message p {
+  color: #e0e0e0 !important;
+}
+
+html[data-theme="dark"] .el-message-box__btns,
+html[data-theme=dark] .el-message-box__btns,
+[data-theme="dark"] .el-message-box__btns,
+[data-theme=dark] .el-message-box__btns {
+  border-top: 1px solid #333333 !important;
+}
+
+html[data-theme="dark"] .el-message-box__btns .el-button--default,
+html[data-theme=dark] .el-message-box__btns .el-button--default,
+[data-theme="dark"] .el-message-box__btns .el-button--default,
+[data-theme=dark] .el-message-box__btns .el-button--default {
+  background-color: #1a1a1a !important;
+  border-color: #333333 !important;
+  color: #e0e0e0 !important;
+}
+
+html[data-theme="dark"] .el-message-box__btns .el-button--default:hover,
+html[data-theme=dark] .el-message-box__btns .el-button--default:hover,
+[data-theme="dark"] .el-message-box__btns .el-button--default:hover,
+[data-theme=dark] .el-message-box__btns .el-button--default:hover {
+  background-color: #222222 !important;
+  border-color: #444444 !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .el-message-box__btns .el-button--primary,
+html[data-theme=dark] .el-message-box__btns .el-button--primary,
+[data-theme="dark"] .el-message-box__btns .el-button--primary,
+[data-theme=dark] .el-message-box__btns .el-button--primary {
+  background-color: #16C47F !important;
+  border-color: #16C47F !important;
+  color: #000000 !important;
+}
+
+html[data-theme="dark"] .el-message-box__btns .el-button--primary:hover,
+html[data-theme=dark] .el-message-box__btns .el-button--primary:hover,
+[data-theme="dark"] .el-message-box__btns .el-button--primary:hover,
+[data-theme=dark] .el-message-box__btns .el-button--primary:hover {
+  background-color: #0ea5e9 !important;
+  border-color: #0ea5e9 !important;
+}
+
+html[data-theme="dark"] .el-message-box__close,
+html[data-theme=dark] .el-message-box__close,
+[data-theme="dark"] .el-message-box__close,
+[data-theme=dark] .el-message-box__close {
+  color: #999999 !important;
+}
+
+html[data-theme="dark"] .el-message-box__close:hover,
+html[data-theme=dark] .el-message-box__close:hover,
+[data-theme="dark"] .el-message-box__close:hover,
+[data-theme=dark] .el-message-box__close:hover {
+  color: #ffffff !important;
+}
+
+/* Light Mode MessageBox */
+html[data-theme="light"] .el-message-box,
+html[data-theme=light] .el-message-box,
+[data-theme="light"] .el-message-box,
+[data-theme=light] .el-message-box {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+html[data-theme="light"] .el-message-box__header,
+html[data-theme=light] .el-message-box__header,
+[data-theme="light"] .el-message-box__header,
+[data-theme=light] .el-message-box__header {
+  border-bottom: 1px solid #eeeeee !important;
+}
+
+html[data-theme="light"] .el-message-box__title,
+html[data-theme=light] .el-message-box__title,
+[data-theme="light"] .el-message-box__title,
+[data-theme=light] .el-message-box__title {
+  color: #1a1a1a !important;
+}
+
+html[data-theme="light"] .el-message-box__content,
+html[data-theme=light] .el-message-box__content,
+[data-theme="light"] .el-message-box__content,
+[data-theme=light] .el-message-box__content {
+  color: #333333 !important;
+}
+
+html[data-theme="light"] .el-message-box__message p,
+html[data-theme=light] .el-message-box__message p,
+[data-theme="light"] .el-message-box__message p,
+[data-theme=light] .el-message-box__message p {
+  color: #333333 !important;
+}
+
+html[data-theme="light"] .el-message-box__btns,
+html[data-theme=light] .el-message-box__btns,
+[data-theme="light"] .el-message-box__btns,
+[data-theme=light] .el-message-box__btns {
+  border-top: 1px solid #eeeeee !important;
+}
+
+html[data-theme="light"] .el-message-box__btns .el-button--default,
+html[data-theme=light] .el-message-box__btns .el-button--default,
+[data-theme="light"] .el-message-box__btns .el-button--default,
+[data-theme=light] .el-message-box__btns .el-button--default {
+  background-color: #f5f5f5 !important;
+  border-color: #e0e0e0 !important;
+  color: #333333 !important;
+}
+
+html[data-theme="light"] .el-message-box__btns .el-button--default:hover,
+html[data-theme=light] .el-message-box__btns .el-button--default:hover,
+[data-theme="light"] .el-message-box__btns .el-button--default:hover,
+[data-theme=light] .el-message-box__btns .el-button--default:hover {
+  background-color: #eeeeee !important;
+  border-color: #cccccc !important;
+  color: #1a1a1a !important;
+}
+
+html[data-theme="light"] .el-message-box__btns .el-button--primary,
+html[data-theme=light] .el-message-box__btns .el-button--primary,
+[data-theme="light"] .el-message-box__btns .el-button--primary,
+[data-theme=light] .el-message-box__btns .el-button--primary {
+  background-color: #16C47F !important;
+  border-color: #16C47F !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="light"] .el-message-box__btns .el-button--primary:hover,
+html[data-theme=light] .el-message-box__btns .el-button--primary:hover,
+[data-theme="light"] .el-message-box__btns .el-button--primary:hover,
+[data-theme=light] .el-message-box__btns .el-button--primary:hover {
+  background-color: #0ea5e9 !important;
+  border-color: #0ea5e9 !important;
+}
+
+html[data-theme="light"] .el-message-box__close,
+html[data-theme=light] .el-message-box__close,
+[data-theme="light"] .el-message-box__close,
+[data-theme=light] .el-message-box__close {
+  color: #666666 !important;
+}
+
+html[data-theme="light"] .el-message-box__close:hover,
+html[data-theme=light] .el-message-box__close:hover,
+[data-theme="light"] .el-message-box__close:hover,
+[data-theme=light] .el-message-box__close:hover {
+  color: #1a1a1a !important;
+}
+
+/* ============================================================================
+   Element Plus Overlay/Backdrop
+   ============================================================================ */
+
+html[data-theme="dark"] .el-overlay,
+html[data-theme=dark] .el-overlay,
+[data-theme="dark"] .el-overlay,
+[data-theme=dark] .el-overlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+html[data-theme="light"] .el-overlay,
+html[data-theme=light] .el-overlay,
+[data-theme="light"] .el-overlay,
+[data-theme=light] .el-overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ============================================================================
+   Element Plus Dialog (if used)
+   ============================================================================ */
+
+html[data-theme="dark"] .el-dialog,
+html[data-theme=dark] .el-dialog,
+[data-theme="dark"] .el-dialog,
+[data-theme=dark] .el-dialog {
+  background-color: #111111 !important;
+  border: 1px solid #333333 !important;
+}
+
+html[data-theme="dark"] .el-dialog__title,
+html[data-theme=dark] .el-dialog__title,
+[data-theme="dark"] .el-dialog__title,
+[data-theme=dark] .el-dialog__title {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .el-dialog__body,
+html[data-theme=dark] .el-dialog__body,
+[data-theme="dark"] .el-dialog__body,
+[data-theme=dark] .el-dialog__body {
+  color: #e0e0e0 !important;
+}
+
+html[data-theme="light"] .el-dialog,
+html[data-theme=light] .el-dialog,
+[data-theme="light"] .el-dialog,
+[data-theme=light] .el-dialog {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+html[data-theme="light"] .el-dialog__title,
+html[data-theme=light] .el-dialog__title,
+[data-theme="light"] .el-dialog__title,
+[data-theme=light] .el-dialog__title {
+  color: #1a1a1a !important;
+}
+
+html[data-theme="light"] .el-dialog__body,
+html[data-theme=light] .el-dialog__body,
+[data-theme="light"] .el-dialog__body,
+[data-theme=light] .el-dialog__body {
+  color: #333333 !important;
+}
+
+/* ============================================================================
+   Force override any inline styles - Ultimate fallback
+   ============================================================================ */
+
+/* Dark mode - Force background and text color in popover */
+[data-theme="dark"] .el-popover,
+[data-theme=dark] .el-popover {
+  background: #1a1a1a !important;
+  background-color: #1a1a1a !important;
+}
+
+[data-theme="dark"] .el-popover *,
+[data-theme=dark] .el-popover * {
+  color: #e0e0e0 !important;
+}
+
+/* Light mode - Force background and text color in popover */
+[data-theme="light"] .el-popover,
+[data-theme=light] .el-popover {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+[data-theme="light"] .el-popover *,
+[data-theme=light] .el-popover * {
+  color: #333333 !important;
+}

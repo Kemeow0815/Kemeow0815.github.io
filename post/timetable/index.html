@@ -339,7 +339,7 @@
     </div>
   </div>
 
-  <div class="timetable-desktop" id="timetable-desktop" style="display: none;">
+  <div class="timetable-desktop timetable-hidden" id="timetable-desktop">
     <div class="timetable-table-wrapper">
       <table class="timetable-table" id="timetable-table">
         <thead id="timetable-thead">
@@ -358,7 +358,7 @@
     </div>
   </div>
 
-  <div class="timetable-mobile" id="timetable-mobile" style="display: none;">
+  <div class="timetable-mobile timetable-hidden" id="timetable-mobile">
   </div>
 
   <div class="timetable-empty-state" id="timetable-empty" style="display: none;">
@@ -723,8 +723,9 @@
     }
     
     document.getElementById('timetable-controls').style.display = 'flex';
-    document.getElementById('timetable-desktop').style.display = 'block';
-    document.getElementById('timetable-mobile').style.display = 'flex';
+    // 移除 hidden 类，让 CSS 媒体查询控制显示
+    document.getElementById('timetable-desktop').classList.remove('timetable-hidden');
+    document.getElementById('timetable-mobile').classList.remove('timetable-hidden');
     
     updateUI();
   }

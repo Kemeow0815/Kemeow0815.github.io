@@ -909,3 +909,146 @@
   }
 }
 
+
+
+/* ============================================================================
+    18. BB TIME LIST - 说说滚动条
+   ============================================================================ */
+
+.bb-time-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.bb-time-list:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.bb-time-list__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.bb-time-list__icon:hover {
+  transform: scale(1.1);
+}
+
+.bb-time-list__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.bb-time-list__icon--newspaper {
+  animation: bb-bounce 2s infinite;
+}
+
+.bb-time-list__icon--arrow {
+  color: var(--color-text-muted);
+}
+
+.bb-time-list__icon--arrow:hover {
+  color: var(--color-accent);
+}
+
+@keyframes bb-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.bb-time-list__container {
+  flex: 1;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bb-time-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bb-time-list__slide {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0 4px;
+}
+
+.bb-time-list__content {
+  font-size: 14px;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.bb-time-list__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.bb-time-list__badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+.bb-time-list__item {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 移动端适配 */
+@media (max-width: 767px) {
+  .bb-time-list {
+    padding: 10px 12px;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .bb-time-list__icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .bb-time-list__icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .bb-time-list__content {
+    font-size: 13px;
+  }
+}
+

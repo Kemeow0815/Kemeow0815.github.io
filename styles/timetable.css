@@ -1,0 +1,496 @@
+/* ============================================================================
+   TIMETABLE PAGE STYLES
+   课程表页面专用样式
+   ============================================================================ */
+
+/* ============================================================================
+   § 1. PAGE HEADER & CONTROLS
+   ============================================================================ */
+
+.timetable-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.timetable-header {
+  margin-bottom: 32px;
+}
+
+.timetable-header__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.timetable-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--color-text-primary);
+  margin: 0 0 8px;
+}
+
+.timetable-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.timetable-meta__divider {
+  color: var(--color-text-muted);
+}
+
+.timetable-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.timetable-week-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.timetable-week-nav__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.timetable-week-nav__btn:hover:not(:disabled) {
+  background-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.timetable-week-nav__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.timetable-week-nav__btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.timetable-week-nav__current {
+  min-width: 80px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  font-size: 14px;
+}
+
+.timetable-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.timetable-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text-primary);
+  font-size: 14px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.timetable-btn:hover {
+  border-color: var(--color-border-hover);
+  background-color: var(--color-border-light);
+}
+
+.timetable-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============================================================================
+   § 2. DESKTOP TABLE VIEW
+   ============================================================================ */
+
+.timetable-desktop {
+  display: block;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.timetable-table-wrapper {
+  overflow-x: auto;
+}
+
+.timetable-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.timetable-table th,
+.timetable-table td {
+  padding: 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.timetable-table thead th {
+  background-color: var(--color-border-light);
+  border-bottom: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.timetable-table tbody tr {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.timetable-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.timetable-table .col-time {
+  width: 120px;
+}
+
+.timetable-node-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timetable-node-info__label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.timetable-node-info__time {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.timetable-day-header {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+/* ============================================================================
+   § 3. COURSE CARDS
+   ============================================================================ */
+
+.timetable-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timetable-course {
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  background-color: var(--color-bg);
+  transition: transform var(--transition-fast);
+}
+
+.timetable-course:hover {
+  transform: translateX(2px);
+}
+
+.timetable-course__name {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.timetable-course__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.timetable-course__meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.timetable-empty-cell {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+/* ============================================================================
+   § 4. MOBILE LIST VIEW
+   ============================================================================ */
+
+.timetable-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timetable-day-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.timetable-day-card__header {
+  padding: 16px 20px;
+  background-color: var(--color-border-light);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.timetable-day-card__title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.timetable-day-card__content {
+  padding: 16px 20px;
+}
+
+.timetable-day-card__courses {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timetable-day-card__empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+.timetable-course--mobile {
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+  background-color: var(--color-bg);
+}
+
+.timetable-course--mobile .timetable-course__name {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.timetable-course--mobile .timetable-course__meta {
+  font-size: 13px;
+  gap: 4px;
+}
+
+/* ============================================================================
+   § 5. TIMETABLE CARD COMPONENT (Sidebar)
+   ============================================================================ */
+
+.timetable-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.timetable-card__inner {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all var(--transition-fast);
+}
+
+.timetable-card:hover .timetable-card__inner {
+  border-color: var(--color-border-hover);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timetable-card__status {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.timetable-card__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timetable-card__line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.timetable-card__label {
+  color: var(--color-text-secondary);
+}
+
+.timetable-card__value {
+  color: var(--color-text-primary);
+}
+
+.timetable-card__value--bold {
+  font-weight: 600;
+}
+
+.timetable-card__value--strikethrough {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.timetable-card__countdown {
+  font-weight: 600;
+  color: var(--color-accent-hover);
+}
+
+.timetable-card__loading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timetable-card__skeleton {
+  height: 12px;
+  background-color: var(--color-border);
+  border-radius: 4px;
+  animation: timetable-pulse 1.5s ease-in-out infinite;
+}
+
+.timetable-card__skeleton--short {
+  width: 60%;
+}
+
+.timetable-card__skeleton--medium {
+  width: 80%;
+}
+
+@keyframes timetable-pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* ============================================================================
+   § 6. RESPONSIVE DESIGN
+   ============================================================================ */
+
+@media (max-width: 767px) {
+  .timetable-page {
+    padding: 24px 16px 60px;
+  }
+
+  .timetable-title {
+    font-size: 1.5rem;
+  }
+
+  .timetable-header__top {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .timetable-desktop {
+    display: none;
+  }
+
+  .timetable-mobile {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .timetable-desktop {
+    display: block;
+  }
+
+  .timetable-mobile {
+    display: none;
+  }
+}
+
+/* ============================================================================
+   § 7. DARK/LIGHT MODE ADAPTATIONS
+   ============================================================================ */
+
+[data-theme="light"] .timetable-course {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="light"] .timetable-course--mobile {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="light"] .timetable-card:hover .timetable-card__inner {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================================================
+   § 8. UTILITY CLASSES
+   ============================================================================ */
+
+.timetable-hidden {
+  display: none !important;
+}
+
+.timetable-text-center {
+  text-align: center;
+}
+
+.timetable-mt-4 {
+  margin-top: 16px;
+}
+
+.timetable-mb-4 {
+  margin-bottom: 16px;
+}

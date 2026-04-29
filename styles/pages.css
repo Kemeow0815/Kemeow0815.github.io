@@ -1067,10 +1067,26 @@
 .sponsor-list__item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   padding: 14px 0;
   border-bottom: 1px solid var(--color-border);
   transition: background-color var(--transition-fast);
+}
+
+.sponsor-list__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.sponsor-list__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
 }
 
 .sponsor-list__item:last-child {
@@ -1103,11 +1119,6 @@
   object-fit: cover;
 }
 
-.sponsor-list__info {
-  flex: 1;
-  min-width: 0;
-}
-
 .sponsor-list__name {
   font-size: 14px;
   font-weight: 600;
@@ -1128,6 +1139,33 @@
   font-weight: 600;
   color: var(--color-accent-hover);
   flex-shrink: 0;
+}
+
+/* 可点击的赞助卡片 */
+.sponsor-list__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sponsor-list__link:hover {
+  text-decoration: none;
+}
+
+.sponsor-list__item--clickable {
+  cursor: pointer;
+}
+
+.sponsor-list__item--clickable:hover {
+  background: var(--color-border);
+  border-radius: 8px;
+  padding: 14px 12px;
+  margin: 0 -12px;
+}
+
+.sponsor-list__link .sponsor-list__item--clickable:hover {
+  padding: 14px 12px;
+  margin: 0 -12px;
 }
 
 

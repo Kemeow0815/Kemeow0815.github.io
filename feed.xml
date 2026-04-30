@@ -711,7 +711,7 @@ let creatingCourse = false // 是否正在创建新课程
 <!-- more -->]]></description>
       <category>waline评论</category>
       <category>博客</category>
-      <enclosure url="https://cdn.jsdmirror.com/gh/zsxcoder/github-img@main/img/waline-neon-deploy.avif" length="0" type="image/jpeg"></enclosure>
+      <enclosure url="https://jsd.268682.xyz/gh/zsxcoder/github-img@main/img/waline-neon-deploy.avif" length="0" type="image/jpeg"></enclosure>
     </item>
     <item>
       <title>新文章通知记录</title>
@@ -964,7 +964,7 @@ function computeDiff(oldText: string, newText: string) {
 ]]></description>
       <category>博客</category>
       <category>功能</category>
-      <enclosure url="https://cdn.jsdmirror.com/gh/zsxcoder/github-img@main/img/post-diff-update.avif" length="0" type="image/jpeg"></enclosure>
+      <enclosure url="https://jsd.268682.xyz/gh/zsxcoder/github-img@main/img/post-diff-update.avif" length="0" type="image/jpeg"></enclosure>
     </item>
   </channel>
 </rss>
